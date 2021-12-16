@@ -1,0 +1,87 @@
+touch .gitignore
+git init
+git add .
+git commit -m "Initial Commit"
+git  status #Just to see
+
+
+  how to upload project
+
+91797@DESKTOP-ICTEL4N MINGW64 ~/Desktop (master)
+$  git add .
+
+91797@DESKTOP-ICTEL4N MINGW64 ~/Desktop (master)
+$ git commit -m "Initial commit"
+[master (root-commit) acaa018] Initial commit
+ 8 files changed, 248 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Code.txt
+ create mode 100644 Report/Final year Project 2017-21.pdf
+ create mode 100644 Result/input1.jfif
+ create mode 100644 Result/input2.jfif
+ create mode 100644 Result/ouput2.jfif
+ create mode 100644 Result/output1.jfif
+ create mode 100644 desktop.ini
+
+91797@DESKTOP-ICTEL4N MINGW64 ~/Desktop (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+91797@DESKTOP-ICTEL4N MINGW64 ~/Desktop (master)
+$ git remote add origin git@github.com:ashishku556/Speech-Recognition-System.git
+
+91797@DESKTOP-ICTEL4N MINGW64 ~/Desktop (master)
+$ git push origin master
+The authenticity of host 'github.com (13.234.176.102)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+91797@DESKTOP-ICTEL4N MINGW64 ~/Desktop (master)
+$ ssh-keygen -t ed25519 -C "yahooashish8@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/91797/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/91797/.ssh/id_ed25519
+Your public key has been saved in /c/Users/91797/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:HosvSnoZNgYPfgJ+Hqm/dTvy5SLzJt6BQuNPsolqdVE yahooashish8@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|       E         |
+|      .          |
+|. o  .           |
+|.o *. . S        |
+| .==O..o o       |
+|  =O+B.oo.       |
+| o.+@=+==        |
+|+.o*++O*+.       |
++----[SHA256]-----+
+
+91797@DESKTOP-ICTEL4N MINGW64 ~/Desktop (master)
+$ cat  /c/Users/91797/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGpUc9GCaFwggbOjTJ13DwM+FiOM+6fvKpZKnAqXbKP2 yahooashish8@gmail.com
+
+91797@DESKTOP-ICTEL4N MINGW64 ~/Desktop (master)
+$ git push origin master
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 982.40 KiB | 3.90 MiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:ashishku556/Speech-Recognition-System.git
+ * [new branch]      master -> master
+
+91797@DESKTOP-ICTEL4N MINGW64 ~/Desktop (master)
+$
+
